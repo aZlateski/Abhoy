@@ -1,38 +1,446 @@
-.App {
-  text-align: center;
+
+#root{
+ background-image: url("ori.jpg");
+ 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:left;
+  
+  object-fit: fill;
+  margin: 0px;
+  padding:0px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.space{
+  height:200px;
+}
+.container{
+  margin-left: 7%;
+  margin-right:7%;
+  background-color: rgba(78, 78, 78, 0.603);
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:left;
+  object-fit: fill;
+  
+}
+.container2{
+  padding-left: 7%;
+  padding-right:7%;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.options{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.NavBar{
+  height:700px;
+  width:auto;
+  background-image: url("bgp.png");
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position:left;
+  background-size: contain;
+
+  
+}
+
+.Logo img{
+  padding-top: 105px;
+  padding-left:50px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-top:100px;
+  padding-bottom: 15px;
+  padding-left:930px;
+  
+}
+
+.sections{
+text-align: end;
+}
+
+
+li {
+  float: left;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.active {
+  background-color: #60ae0d;
+}
+
+
+
+.imgbg{
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.info{
+  background-color: #04070159;
+  margin-left:20px;
+  margin-right:20px;
+  border-top:5px solid #47800a;
+  
+}
+
+.info h4{
+  
+  font-size: small;
+  font-family: 'Didact Gothic', sans-serif;
+  color:rgba(255, 255, 255, 0.356);
+  padding-left:10px;
+  padding-right:10px;
+}
+
+
+
+
+h1{
+  margin: 0px;
+}
+h2{
+  font-family: 'Didact Gothic', sans-serif;
+  color:#47800a;
+ 
+  margin-bottom: 0px;
+}
+
+h4{
+  font-family: 'Didact Gothic', sans-serif;
+  margin:0;
+  
+  padding-top:10px;
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the counter cards */
+.card {
+  height: 700px;
+  
+  text-align: left;
+  background-color: #222222;
+  background-image: linear-gradient(240deg, #252e29 0%, #252525 60%);
+  display:grid;
+  grid-template-rows: 48% 42% 10%;
+  transition: transform .5s ease-in-out;
+  
+}
+
+.card:hover{
+
+  background-color: #292929;
+}
+
+.pics-c{
+  padding:20px;
+  border-radius: 0px 50px 0px 50px;
+}
+.pics{
+  width: 100%;
+  border-radius: 0px 100px 0px 100px;
+ 
+}
+
+
+
+
+h3{
+  color: white;
+  font-family: 'Didact Gothic', sans-serif;
+  margin-top:0;
+  padding-left:10px;
+  padding-top:20px;
+}
+
+p{
+  color: white;
+  padding-left:10px;
+  padding-right:10px;
+  font-family: 'Didact Gothic', sans-serif;
+  padding-top:10px;
+  
+}
+
+
+
+.movie-list{
+ 
+  width: 100%;
+  height: 1450px;
+ 
+  
+ 
+}
+
+
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:12px 24px;
+  text-decoration:none;
+  margin-left:20px;
+  margin-top:15px;
+  
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+
+  .movie-list{
+    padding-right:0;
+    margin-left:0%;
   }
-  to {
-    transform: rotate(360deg);
+  
+    .card{
+     height: 800px;
+    }
+    
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
   }
+
+
+  .newgames{
+    
+    height:100px;
+   
+    text-align: left;
+   
+  }
+
+  .newgames h1{
+    color: white;
+    padding-top:10px;
+    padding-bottom:20px;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+  .newgames-text{
+border-bottom: 1px solid white;
+  }
+
+  .content{    
+    height: 900px;    
+    margin-left:10px;
+    margin-right:10px;
+    background-color: #222222da;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    margin-bottom: 50px;
+  }
+
+  .content-top{
+    text-align: left;
+    width: 100%;
+  
+    padding-left: 10px;
+    background-color: #e84393;
+    background-image: linear-gradient(287deg, #48574f 0%, #252525 74%);
+  }
+  .content-bot{
+    
+    background-color: #161616;
+    display: grid;
+    grid-template-rows: 50% 50%;
+  }
+
+  .Content-bot-top{
+    display:grid;    
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .content-top h1{
+    color: #9db484;
+    padding-top:20px;
+    padding-left:20px;
+    
+    font-family: 'Didact Gothic', sans-serif;
+   
+  }
+
+  .Content-bot-top-left{
+    margin:20px;
+    
+  }
+
+  .Content-bot-top-right{
+    margin:10px;
+    padding-right:90px;
+    
+   
+  }
+
+  .Content-bot-top-right h1{
+    padding-top: 30px;
+    color: #9db484;
+    font-family: 'Didact Gothic', sans-serif;
+}
+  
+.Content-bot-top-right p{
+  padding:0px;
+  margin:0px;
+  padding-top:20px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.Content-bot-top-right button{
+  margin:0;
+  margin-top : 35px;
+  padding:30px;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.Content-bot-bot{
+  display:grid;    
+  grid-template-columns: 50% 50%;
+  
+}
+
+
+.Content-bot-bot-left{
+margin-right:20px;
+margin-left:40px;
+padding-top:20px;
+}
+
+.Content-bot-bot-left h1{
+  
+  color: #9db484;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.Content-bot-bot-left p{
+  padding:0px;
+  margin:0px;
+  padding-top:20px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.Content-bot-bot-left button{
+  margin:0;
+  margin-top : 35px;
+  padding:30px;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.Content-bot-bot-right{
+  padding-left:10px;
+  padding-top:20px;
+}
+
+
+.dotac{
+  height: auto;
+  
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.dotac-top img{
+  height:600px;
+  padding-top:70px;
+  
+}
+
+.dotac-top{
+  
+  display: flex;
+  justify-content: center;
+}
+
+a{
+ color: white;
+  text-decoration: none;
+}
+
+.dotac-bot p{
+  text-align: justify;
+  padding-left:350px;
+  padding-right:350px;
+}
+
+.dotac-bot button{
+
+  
+  padding:30px;
+  padding-left:50px;
+  padding-right:50px;
+  margin-left:350px;
+  margin-top:50px;
+  margin-bottom: 100px;
 }
