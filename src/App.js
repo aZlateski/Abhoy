@@ -10,31 +10,27 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Ac from "./Ac";
-
-
+import DynamicArticle from "./DynamicArticle";
 import "./App.css";
 
-
-
-
-
 function App() {
-
   return (
-
     <>
- 
     <div className="container">
-    <NavBar /> 
-      <div className="container2">
-       
-         
-        <NewGames />
-        <MovieList />
-        <Content />
-        <Footer /> 
-    </div>
+      <Switch>
+          <Route exact path="/">
+            <>
+              <NavBar /> 
+              <div className="container2">
+                <NewGames />
+                <MovieList />
+                <Content />
+                <Footer /> 
+              </div>
+            </>
+          </Route>
+          <Route path="/:productName" component={DynamicArticle} />
+      </Switch>
       </div>
     </>
   );

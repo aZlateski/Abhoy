@@ -3,25 +3,16 @@ import "./App.css";
 
 import ReactPlayer from "react-player";
 import { BrowserRouter, Route, Switch,Link } from 'react-router-dom';
-import Ac from "./Ac";
+import DynamicArticle from "./DynamicArticle";
 
 
 
 function Content (){
-
-
- 
-
     return(
-  
-
         <div className="content">
-             
-            
             <div className="content-top">
                 <h1>Gaming News</h1>
             </div>
-            
             <div className="content-bot">
                 <div className="Content-bot-top">
                   <div className="Content-bot-top-left">
@@ -46,13 +37,7 @@ function Content (){
                       <p>Assassin's Creed Valhalla is an action role-playing video game developed by Ubisoft Montreal and published by Ubisoft. It is the twelfth major installment and the twenty-second release in the Assassin's Creed series, and a successor to the 2018 game Assassin's Creed Odyssey.
                           </p>
                           <p>Assassin's Creed Valhalla is an open world action-adventure game, structured around several main story quests and numerous optional side missions. The player takes on the role of Eivor , a Viking raider, as he/she leads his/her fellow Vikings against the Anglo-Saxon kingdoms.</p>
-                          
-                     
-
-
-  
-                       
-                       
+    
                           <div className="button">
                       <button className="myButton"><Link to="/Ac">Read More</Link></button>
                       </div>
